@@ -20,20 +20,26 @@ These instructions will get you a copy of the project up and running on your loc
 ~$ git clone https://github.com/minoh0201/MetaCompare
 ```
 
-**Step 3:** make directory `BlastDB` and change woring directory to it
+**Step 3:** Make directory `BlastDB` and change woring directory to it.
 
 ```
 ~$ mkdir BlastDB
 ~$ cd BlastDB
 ```
 
-**Step 4:** download the compressed Blast Database file from the web server.
+**Step 4:** Download the compressed Blast Database file from the web server (25 GB) and uncompress it.
 
 ```
-~/BlastDB$ wget http://bench.cs.vt.edu/ftp/data/metacomp/BlastDB.tar
+~/BlastDB$ wget http://bench.cs.vt.edu/ftp/data/metacomp/BlastDB.tar.gz
+~/BlastDB$ tar -zxvf BlastDB.tar.gz
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+**Step 5:** Get back to working directory `MetaCompare` and run `metacmp.py`
+
+```
+~/BlastDB$ cd ..
+~$ ./metacmp.py
+```
 
 ## Running the tests
 
