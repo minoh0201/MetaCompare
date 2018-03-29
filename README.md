@@ -47,7 +47,9 @@ MetaCompare requires two input FASTA files, one for the assembled contigs and th
 
 If you have raw reads you can submit them to MetaStorm (http://bench.cs.vt.edu/MetaStorm/) and run assembly pipeline to get assembled contigs and predicted gene list. 
 
-These files can be downloaded from MetaStorm by clicking 'Scaffolds' button and 'Genes' button in the assembled sample page.
+These files can be downloaded from MetaStorm by clicking `Scaffolds` button and `Genes` button in the assembled sample page.
+
+Suppose you have the assembled contigs file, `S1.fa`, and predicted gene list `S1_genes.fa`. 
 
 ### Break down into end to end tests
 
