@@ -17,13 +17,20 @@ These instructions will get you a copy of the project up and running on your loc
 **Step 1:** Change the current working directory to the location where you want the cloned `MetaCompare` directory to be made.
 **Step 2:** Clone the repository using git command
 ```
-git clone https://github.com/minoh0201/MetaCompare
+~$ git clone https://github.com/minoh0201/MetaCompare
 ```
 
-And repeat
+**Step 3:** make directory `BlastDB` and change woring directory to it
 
 ```
-until finished
+~$ mkdir BlastDB
+~$ cd BlastDB
+```
+
+**Step 4:** download the compressed Blast Database file from the web server.
+
+```
+~/BlastDB$ wget http://bench.cs.vt.edu/ftp/data/metacomp/BlastDB.tar
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
