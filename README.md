@@ -8,17 +8,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### System Requirements (*tested on linux Ubuntu 14.04*)
 
+* git installed
 * Python3 with pandas package installed
 * Blast 2.2.8 or higher version installed
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
+**Step 1:** Change the current working directory to the location where you want the cloned `MetaCompare` directory to be made.
+**Step 2:** Clone the repository using git command
 ```
-Give the example
+git clone https://github.com/minoh0201/MetaCompare
 ```
 
 And repeat
