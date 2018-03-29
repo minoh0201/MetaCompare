@@ -53,7 +53,7 @@ These files can be downloaded from MetaStorm by clicking `Scaffolds` button and 
 
 ### Running
 
-Suppose you have the assembled contigs file, `S1.fa`, and predicted gene list `S1_genes.fa`. 
+Suppose you have the assembled contigs file, `S1.fa`, and predicted gene list `S1_genes.fa` (These files are already in your working directory).
 
 The following command runs MetaCompare with 128 threads.
 
