@@ -41,13 +41,17 @@ These instructions will get you a copy of the project up and running on your loc
 ~$ ./metacmp.py
 ```
 
-### Running MetaCompare
+## Running MetaCompare
+
+### Preparing input files
 
 MetaCompare requires two input FASTA files, one for the assembled contigs and the other for predicted gene list derived from the assembled contigs using prodigal. 
 
 If you have raw reads you can submit them to MetaStorm (http://bench.cs.vt.edu/MetaStorm/) and run assembly pipeline to get assembled contigs and predicted gene list. 
 
 These files can be downloaded from MetaStorm by clicking `Scaffolds` button and `Genes` button in the assembled sample page.
+
+### Running
 
 Suppose you have the assembled contigs file, `S1.fa`, and predicted gene list `S1_genes.fa`. 
 
