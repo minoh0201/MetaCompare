@@ -4,15 +4,12 @@ MetaCompare is a computational pipeline for prioritizing resistome risk by estim
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine or server.
 
-### Prerequisites
+### System Requirements (*tested on linux Ubuntu 14.04*)
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+* Python3 with pandas package installed
+* Blast 2.2.8 or higher version installed
 
 ### Installing
 
