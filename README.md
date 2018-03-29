@@ -43,7 +43,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+MetaCompare requires two input FASTA files, one for the assembled contigs and the other for predicted gene list derived from the assembled contigs using prodigal. 
+
+If you have raw reads you can submit them to MetaStorm (http://bench.cs.vt.edu/MetaStorm/) and run assembly pipeline to get assembled contigs and predicted gene list. 
+
+These files can be downloaded from MetaStorm by clicking 'Scaffolds' button and 'Genes' button in the assembled sample page.
 
 ### Break down into end to end tests
 
