@@ -41,7 +41,7 @@ These instructions will get you a copy of the project up and running on your loc
 ~$ ./metacmp.py
 ```
 
-## Running the tests
+### Running MetaCompare
 
 MetaCompare requires two input FASTA files, one for the assembled contigs and the other for predicted gene list derived from the assembled contigs using prodigal. 
 
@@ -51,52 +51,22 @@ These files can be downloaded from MetaStorm by clicking `Scaffolds` button and 
 
 Suppose you have the assembled contigs file, `S1.fa`, and predicted gene list `S1_genes.fa`. 
 
-### Break down into end to end tests
-
-Explain what these tests test and why
+The following command runs MetaCompare with 128 threads.
 
 ```
-Give an example
+~$ ./metacmp.py -c S1.fa -g S1_genes.fa -t 128
+```
+The output should be look like as follows:
+```
+Running blastn on ACLAME
+Running blastx on CARD
+Running blastn on PATRIC
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
+You can see detailed description for command line options by using `-h` option.
 ```
-Give an example
+~$ ./metacmp.py -h
 ```
+## Citation
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+TBA
