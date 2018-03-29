@@ -61,6 +61,9 @@ The output should be look like as follows:
 Running blastn on ACLAME
 Running blastx on CARD
 Running blastn on PATRIC
+Reading files...
+Computing resistome risk score..
+Resistome risk score: 38.64014990951873
 ```
 
 You can see detailed description for command line options by using `-h` option.
