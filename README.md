@@ -55,7 +55,7 @@ The input files we need can be downloaded from MetaStorm by clicking `Scaffolds`
 
 #### Option 2
 
-You can directly install and run trimmomatic (https://github.com/timflutre/trimmomatic), IDBA-UD (https://github.com/loneknightpy/idba) and prodigal (https://github.com/hyattpd/Prodigal) to process your raw reads inorder to get the inputs.
+You can directly install and run trimmomatic (https://github.com/timflutre/trimmomatic), IDBA-UD (https://github.com/loneknightpy/idba) and prodigal (https://github.com/hyattpd/Prodigal) to process your raw reads in order to get the inputs.
 
 ### Running
 
