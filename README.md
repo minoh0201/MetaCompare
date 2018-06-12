@@ -107,4 +107,4 @@ SOFTWARE.
 
 ## Citation
 
-TBA
+Oh, M., Pruden, A., Chen, C., Heath, L. S., Xia, K., & Zhang, L. (2018). MetaCompare: A computational pipeline for prioritizing environmental resistome risk. FEMS microbiology ecology.
