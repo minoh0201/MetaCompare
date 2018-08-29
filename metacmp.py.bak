@@ -27,15 +27,11 @@ if __name__ == '__main__':
         print('\t-c: Specify FASTA file containing assembled contigs (resulted from IDBA-UD).')
         print('\t-g: Specify FASTA file containing predicted genes (derived from prodigal).')
         print('\t-t: Specify the number of threads will be used in executing blast (default: 64).')
-		print('\t-v: Printing important values in calculation On/Off [1: On (default), 0: Off]')
         print()
         exit()
 
     if not '-t' in myargs:
         myargs['-t'] = '64'
-	
-	if not '-v' in myargs:
-        myargs['-v'] = '1'
 
     sample_name = myargs['-c'].split('.')[0]
 
@@ -170,19 +166,7 @@ if __name__ == '__main__':
 
         score = 1.0 / ( (2 + math.log10(distance))**2 )
 
-		# other stat
-
-		nMGE = len(MGE_contigs)
-		nPAT = len(PAT_contigs)
-		fMGE = float(nMGE)/nContigs
-		fPAT = float(nPAT)/nContigs
-
         print("Resistome risk score: " + str(score))
-
-		if myargs['-v'] == '1':
-			print("nContigs, nARG, nMGE, nPAT, nARG&MGE, nARG&MGE&PAT, nARG/nContigs, nMGE/nContigs, nPAT/nContigs, nARG&MGE/nContigs, nARG&MGE&PAT/nContigs, Risk Score\n")
-			print(nContigs, nARG, nMGE, nPAT, nARG_MGE, nARG_MGE_PAT, fARG, fMGE, fPAT, fARG_MGE, fARG_MGE_PAT, score)
-
 
 
 
