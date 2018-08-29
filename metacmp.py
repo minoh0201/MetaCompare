@@ -179,9 +179,9 @@ if __name__ == '__main__':
 
         print("Resistome risk score: " + str(score))
 
-		if myargs['-v'] == '1':
-			print("nContigs, nARG, nMGE, nPAT, nARG&MGE, nARG&MGE&PAT, nARG/nContigs, nMGE/nContigs, nPAT/nContigs, nARG&MGE/nContigs, nARG&MGE&PAT/nContigs, Risk Score\n")
-			print(nContigs, nARG, nMGE, nPAT, nARG_MGE, nARG_MGE_PAT, fARG, fMGE, fPAT, fARG_MGE, fARG_MGE_PAT, score)
+        if myargs['-v'] == '1':
+            print("nContigs, nARG, nMGE, nPAT, nARG&MGE, nARG&MGE&PAT, nARG/nContigs, nMGE/nContigs, nPAT/nContigs, nARG&MGE/nContigs, nARG&MGE&PAT/nContigs, Risk Score\n")
+            print(nContigs, nARG, nMGE, nPAT, nARG_MGE, nARG_MGE_PAT, fARG, fMGE, fPAT, fARG_MGE, fARG_MGE_PAT, score)
 
 
 
