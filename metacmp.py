@@ -172,10 +172,10 @@ if __name__ == '__main__':
 
 		# other stat
 
-		nMGE = len(MGE_contigs)
-		nPAT = len(PAT_contigs)
-		fMGE = float(nMGE)/nContigs
-		fPAT = float(nPAT)/nContigs
+        nMGE = len(MGE_contigs)
+        nPAT = len(PAT_contigs)
+        fMGE = float(nMGE)/nContigs
+        fPAT = float(nPAT)/nContigs
 
         print("Resistome risk score: " + str(score))
 
