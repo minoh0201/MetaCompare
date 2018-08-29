@@ -20,7 +20,7 @@ These instructions will get you a copy of the project up and running on your loc
 ~$ git clone https://github.com/minoh0201/MetaCompare
 ```
 
-**Step 3:** Make directory `BlastDB` and change woring directory to it.
+**Step 3:** Make directory `BlastDB` under `MetaCompare` directory and change the woring directory to it.
 
 ```
 ~$ cd MetaCompare
