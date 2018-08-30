@@ -9,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### System Requirements (*tested on linux Ubuntu 14.04*)
 
 * git installed
-* Python3 with pandas package installed
+* Python3 with `pandas` and `biopython` package installed
 * Blast 2.2.8 or higher version installed
 
 ### Installing
