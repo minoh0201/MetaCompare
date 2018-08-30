@@ -27,7 +27,7 @@ if __name__ == '__main__':
         print('\t-c: Specify FASTA file containing assembled contigs (resulted from IDBA-UD).')
         print('\t-g: Specify FASTA file containing predicted genes (derived from prodigal).')
         print('\t-t: Specify the number of threads will be used in executing blast (default: 64).')
-        print('\t-v: Printing important values in calculation On/Off [1: On (default), 0: Off]')
+		print('\t-v: Printing important values in calculation On/Off [1: On (default), 0: Off]')
         print()
         exit()
 
