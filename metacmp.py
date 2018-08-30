@@ -34,7 +34,7 @@ if __name__ == '__main__':
     if not '-t' in myargs:
         myargs['-t'] = '64'
 	
-	if not '-v' in myargs:
+    if not '-v' in myargs:
         myargs['-v'] = '1'
 
     sample_name = myargs['-c'].split('.')[0]
