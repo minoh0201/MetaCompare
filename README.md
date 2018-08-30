@@ -35,6 +35,7 @@ These instructions will get you a copy of the project up and running on your loc
 ~/MetaCompare/BlastDB$ wget http://bench.cs.vt.edu/ftp/data/metacomp/BlastDB.tar.gz
 ~/MetaCompare/BlastDB$ tar -zxvf BlastDB.tar.gz
 ```
+*Note:* If you are encountering `ERROR: cannot verify bench.cs.vt.edu's certificate`, execute wget command with `--no-check-certificate` option.
 
 **Step 5:** Get back to working directory `MetaCompare` and run `metacmp.py`
 
