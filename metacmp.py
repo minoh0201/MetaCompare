@@ -104,7 +104,7 @@ if __name__ == '__main__':
         ac_iden60 = ac[ac.identity > 60]
 
         # filter out contigs having less than 90% coverage of the reference
-        if not os.path.exists(os.getcwd()+"/Len_aclame.txt"):
+        if not os.path.exists(os.path.dirname(__file__)+"/Len_aclame.txt"):
             print('Len_aclame.txt file does not exists.')
             sys.exit()
         else:
