@@ -108,7 +108,7 @@ if __name__ == '__main__':
             print('Len_aclame.txt file does not exists.')
             sys.exit()
         else:
-            acleng = pd.read_csv("Len_aclame.txt", sep='\t', header=None)
+            acleng = pd.read_csv(os.path.dirname(__file__)+"/Len_aclame.txt", sep='\t', header=None)
             acleng.columns = ['sub_id', 'ref_gene_leng']
             ac_merged = pd.merge(ac_iden60, acleng, how = 'left', on = 'sub_id')
             ac_filtered = ac_merged[ac_merged.alignLen > (ac_merged.ref_gene_leng * 0.9)]
