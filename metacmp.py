@@ -89,7 +89,6 @@ if __name__ == '__main__':
     #10: evalue
     #11: bit score
 
-
     print('Computing resistome risk score..')
  
     # Open blast output for ACLAME
@@ -152,7 +151,7 @@ if __name__ == '__main__':
         ARG_contigs = []
         for gene in ca_alen.id:
             contig_name = gene.split("_")
-            ARG_contigs.append(contig_name[0]+"_"+contig_name[1])
+            ARG_contigs.append("_".join(contig_name[:-1]))
         ARG = set(ARG_contigs)
 
         # computing risk score
@@ -184,8 +183,13 @@ if __name__ == '__main__':
             print(nContigs, nARG, nMGE, nPAT, nARG_MGE, nARG_MGE_PAT, fARG, fMGE, fPAT, fARG_MGE, fARG_MGE_PAT, score)
 
 
-
-
+    #contigs containing ARG, MGE, and PAT
+    #print("ARG_contigs")
+    #print(ARG_contigs)
+    #print("MGE_contigs")
+    #print(MGE_contigs)
+    #print("PAT_contigs")
+    #print(PAT_contigs)
 
 
 
