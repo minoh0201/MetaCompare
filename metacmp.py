@@ -183,13 +183,13 @@ if __name__ == '__main__':
             print(nContigs, nARG, nMGE, nPAT, nARG_MGE, nARG_MGE_PAT, fARG, fMGE, fPAT, fARG_MGE, fARG_MGE_PAT, score)
 
 
-    #contigs containing ARG, MGE, and PAT
-    #print("ARG_contigs")
-    #print(ARG_contigs)
-    #print("MGE_contigs")
-    #print(MGE_contigs)
-    #print("PAT_contigs")
-    #print(PAT_contigs)
+    # #contigs containing ARG, MGE, and PAT
+    # print("ARG_contigs")
+    # print(ARG_contigs)
+    # print("MGE_contigs")
+    # print(MGE_contigs)
+    # print("PAT_contigs")
+    # print(PAT_contigs)
 
 
 
