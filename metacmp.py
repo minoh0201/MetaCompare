@@ -39,6 +39,9 @@ if __name__ == '__main__':
 
     sample_name = myargs['-c'].split('.')[0]
 
+    print("check file path: ")
+    print(os.path.dirname(__file__))
+
     acc_name = sample_name + "_ACLAME.txt"
     if not os.path.exists(os.getcwd()+"/"+acc_name):
         print('Running blastn on ACLAME')
