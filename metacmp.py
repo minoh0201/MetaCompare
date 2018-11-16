@@ -40,12 +40,12 @@ if __name__ == '__main__':
     sample_name = myargs['-c'].split('.')[0]
 
     print("check file path: ")
-    print(os.path.dirname(__file__))
+    print(os.path.dirname(os.path.abspath(__file__)))
 
     acc_name = sample_name + "_ACLAME.txt"
     if not os.path.exists(os.getcwd()+"/"+acc_name):
         print('Running blastn on ACLAME')
-        subprocess.call(["blastn", "-db", os.path.dirname(__file__)+"/BlastDB/aclame", "-query", myargs['-c'], \
+        subprocess.call(["blastn", "-db", os.path.dirname(os.path.abspath(__file__))+"/BlastDB/aclame", "-query", myargs['-c'], \
                          "-out", acc_name, "-outfmt", "6", \
                          "-num_threads", myargs['-t'], "-evalue", "1e-10"])
     else:
@@ -54,7 +54,7 @@ if __name__ == '__main__':
     card_name = sample_name + "_CARD.txt"
     if not os.path.exists(os.getcwd()+"/"+card_name):
         print('Running blastx on CARD')
-        subprocess.call(["blastx", "-db", os.path.dirname(__file__)+"/BlastDB/CARD_PROT", "-query", myargs['-g'], \
+        subprocess.call(["blastx", "-db", os.path.dirname(os.path.abspath(__file__))+"/BlastDB/CARD_PROT", "-query", myargs['-g'], \
                          "-out", card_name, "-outfmt", "6", \
                          "-num_threads", myargs['-t'], "-evalue", "1e-10"])
     else:
@@ -63,7 +63,7 @@ if __name__ == '__main__':
     patric_name = sample_name + "_PATRIC.txt"
     if not os.path.exists(os.getcwd()+"/"+patric_name):
         print('Running blastn on PATRIC')
-        subprocess.call(["blastn", "-db", os.path.dirname(__file__)+"/BlastDB/PATRIC", "-query", myargs['-c'], \
+        subprocess.call(["blastn", "-db", os.path.dirname(os.path.abspath(__file__))+"/BlastDB/PATRIC", "-query", myargs['-c'], \
                          "-out", patric_name, "-outfmt", "6", \
                          "-num_threads", myargs['-t'], "-evalue", "1e-10"])
     else:
